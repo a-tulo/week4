@@ -27,3 +27,9 @@ def cross_bridge(distance):
     else:
         print("We must keep going")
 
+def climb_ladder(steps_remaining, steps_crossed):
+    if steps_remaining > steps_crossed:
+        print("Still some way to go!")
+    else:
+        print("We are almsot there!")
+
