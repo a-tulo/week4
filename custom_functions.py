@@ -33,3 +33,14 @@ def climb_ladder(steps_remaining, steps_crossed):
     else:
         print("We are almsot there!")
 
+def display_ladder(steps):
+    print(''' 
+    | |
+    ***
+    ''' * steps) #cheat way of doing it. Solutions says For step in range(steps): print statements.
+    print("| |") # bottom of ladder
+
+def create_ladder():
+    user_steps = int(input("How many steps remain?\n"))
+    display_ladder(user_steps)
+
