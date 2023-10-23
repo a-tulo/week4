@@ -44,3 +44,19 @@ def create_ladder():
     user_steps = int(input("How many steps remain?\n"))
     display_ladder(user_steps)
 
+def sum_weights(character_weight, inventory_weight):
+    return  character_weight + inventory_weight
+
+def calc_avg_weight(character_weight, inventory_weight):
+    return sum_weights(character_weight,inventory_weight) / 2
+
+def run():
+    char_weight = int(input("Enter character weight\n"))
+    inv_weight = int(input("Enter inv weight\n"))
+
+    usr_choice = input("Sum or Average\n")
+    if usr_choice == "sum":
+       print(sum_weights(char_weight,inv_weight))
+    elif usr_choice =="average":
+       print(calc_avg_weight(char_weight,inv_weight))
+
